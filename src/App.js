@@ -1,9 +1,19 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import RouterPage from "./PAGES/RouterPage";
 
 function App() {
   return (
-    <div className="App">
+    <RouterPage/>
+  );
+}
+
+export default App;
+
+/*
+
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,8 +28,5 @@ function App() {
           Selamın Aleyküm
         </a>
       </header>
-    </div>
-  );
-}
 
-export default App;
+*/
