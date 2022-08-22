@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import KAppBar from "../COMPONENTS/AppBar";
 import BlogPage from "./BlogPage";
 import MainPage from "./MainPage";
@@ -10,14 +10,10 @@ function RouterPage() {
     <>
       <Router>
         <KAppBar />
-        <Switch>
-          <Route exact path="/">
-            <MainPage />
-          </Route>
-          <Route exact path="/Blog">
-            <BlogPage/>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/Blog" element={<BlogPage />} />
+        </Routes>
       </Router>
     </>
   );

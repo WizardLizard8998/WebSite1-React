@@ -4,7 +4,11 @@ import "./App.css";
 import RouterPage from "./PAGES/RouterPage";
 
 function App() {
-  return <RouterPage />;
+  return (
+    <>
+      <RouterPage />
+    </>
+  );
 }
 
 export default App;

@@ -6,21 +6,21 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 
-
 import "../Styles.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function KAppBar() {
-
-  const history = useHistory();
+  const history = useNavigate();
 
   return (
-    <div >
+    <div>
       <Box>
         <AppBar className="appBar" position="static" color="inherit">
           <Toolbar>
             <IconButton
-              onClick ={() => {history.push("/")}}
+              onClick={() => {
+                history("/");
+              }}
               size="large"
               edge="start"
               color="inherit"
@@ -30,7 +30,14 @@ export default function KAppBar() {
               Kerem Berkkanoğlu
             </IconButton>
 
-            <Button color="inherit" onClick={() => { history.push("/Blog")}}>Blog</Button>
+            <Button
+              color="inherit"
+              onClick={() => {
+                history("/Blog");
+              }}
+            >
+              Blog
+            </Button>
             <Button color="inherit">Leave a Note</Button>
           </Toolbar>
         </AppBar>
