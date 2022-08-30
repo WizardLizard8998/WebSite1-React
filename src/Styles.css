@@ -1,3 +1,28 @@
-.appBar{
-    background-color: #6200EA;
+.appBar {
+  background-color: #6200ea;
+}
+
+.pageTemplate {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+.leftbar {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 20%;
+  margin-right: 100px;
+}
+
+.midcontent {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  width: fit-content;
+}
+
+.midBox {
+  width: 100%;
 }
