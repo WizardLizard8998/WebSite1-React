@@ -20,7 +20,7 @@ function BoxSx(props) {
       sx={{
         margin:1,
         borderRadius:10,
-        width: 1000,
+        width: 'inherit',
         height: 300,
         backgroundColor: `${renk}`,
         '&:hover': {
