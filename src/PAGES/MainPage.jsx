@@ -2,6 +2,8 @@ import React from "react";
 import Button from "@mui/material/Button";
 import "../Styles.css";
 import axios from "axios";
+import Typography from '@mui/material/Typography';
+
 //import { useEffect , useState} from "react";
 
 import Box from '@mui/material/Box';
@@ -29,7 +31,12 @@ function BoxSx(props) {
         },
       }}
     >
-        <h1>aaaaaaa</h1>
+      <div class= "box-title">
+         <Typography variant="h6" >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+        blanditiis tenetur
+      </Typography>
+      </div>
         <div>
         <Button color="primary">asdasdasdasd</Button>
         </div>
@@ -52,11 +59,11 @@ function MainPage(props) {
     <>
       <div className="pageTemplate">
         <div className="leftbar">
-          <h1>left content </h1>
+        <Typography variant="h4" > left-content </Typography>
         </div>
         
         <div className="midcontent">
-        <h1>mid content</h1>
+        <Typography variant="h4" > mid-content </Typography>
         <div className="midBox">
         {colors && colors.map((data,index) => <BoxSx renk={data} />)}
         </div>

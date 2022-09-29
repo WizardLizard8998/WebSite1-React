@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 
 import "../Styles.css";
 import { useNavigate } from "react-router-dom";
+import { Typography } from "@mui/material";
 
 export default function KAppBar() {
   const history = useNavigate();
@@ -26,7 +27,7 @@ export default function KAppBar() {
               aria-label="menu"
               sx={{ mr: 2 }}
             >
-              Kerem Berkkanoğlu
+              <Typography variant="h6"> Kerem Berkkanoğlu</Typography>
             </IconButton>
 
             <Button

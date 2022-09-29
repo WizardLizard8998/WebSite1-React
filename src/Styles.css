@@ -23,6 +23,11 @@
   width: fit-content;
 }
 
+
+.box-title{
+  margin: 10%;
+}
+
 .midBox {
   width: 100%;
   min-width: fit-content;
