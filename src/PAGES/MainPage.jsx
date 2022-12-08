@@ -59,7 +59,8 @@ function MainPage(props) {
     <>
       <div className="pageTemplate">
         <div className="leftbar">
-        <Typography variant="h4" > left-content </Typography>
+        <Typography variant="h6" > left-content </Typography>
+        <Typography variant="p" > left-content content </Typography>
         </div>
         
         <div className="midcontent">
