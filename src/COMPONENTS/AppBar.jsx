@@ -38,7 +38,7 @@ export default function KAppBar() {
             >
               Blog
             </Button>
-            <Button color="inherit">Leave a Note</Button>
+            <Button color="inherit" onClick={() => { history("/BirNotBırak"); }}> Bir Not Bırak </Button>
           </Toolbar>
         </AppBar>
       </Box>

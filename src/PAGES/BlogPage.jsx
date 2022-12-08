@@ -5,11 +5,10 @@ import React from "react";
 function BlogPage(props) {
 
 
-
   
   return (
     <>
-      <h1>blog page</h1>
+      <h1>Blog </h1>
     </>
   );
 }
