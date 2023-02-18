@@ -1,8 +1,10 @@
 .appBar {
-  background-color: #6200ea;
+  background-color: #25a0d5;
+  color: azure;
 }
 
 .pageTemplate {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: row;
   padding: 1%;

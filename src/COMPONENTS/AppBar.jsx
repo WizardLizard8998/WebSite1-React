@@ -15,7 +15,7 @@ export default function KAppBar() {
   return (
     <div>
       <Box>
-        <AppBar className="appBar" position="static" color="inherit">
+        <AppBar class="appBar" position="static" >
           <Toolbar>
             <IconButton
               onClick={() => {
