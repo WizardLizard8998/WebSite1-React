@@ -4,14 +4,18 @@ import { usePreviousProps } from "@mui/utils";
 
 const ThemeContext = createContext();
 
-function Theme(props) {
-  const [theme, setTheme] = useState("light");
+function ThemeProvider(props) {
+  const [theme, setTheme] = useState(false);
+
+  const changeTheme = () => {
+    setTheme(!theme);
+  };
 
   return (
     <ThemeContext.Provider
       value={{
         theme,
-        setTheme,
+        changeTheme,
       }}
     >
       {props.children}

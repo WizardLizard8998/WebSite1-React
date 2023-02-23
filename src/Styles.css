@@ -10,6 +10,11 @@
   padding: 1%;
 }
 
+.pageTemplate-dark {
+   background-color:#0B1340;
+   color: azure;
+}
+
 .leftbar {
   display: flex;
   flex-direction: column;

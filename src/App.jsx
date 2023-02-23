@@ -1,10 +1,13 @@
 import React from "react";
+import { ThemeProvider } from "./DATA/ThemeContext";
 import RouterPage from "./RouterPage";
 
 function App() {
   return (
     <>
-      <RouterPage />
+      <ThemeProvider>
+        <RouterPage />
+      </ThemeProvider>
     </>
   );
 }
