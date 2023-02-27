@@ -1,12 +1,12 @@
 import {React , useContext} from "react";
 
 import "../Styles.css";
-import axios from "axios";
+
 import Typography from "@mui/material/Typography";
 import { ThemeContext } from "../DATA/ThemeContext";
 import LeftBar from "../COMPONENTS/LeftBar";
 import ContentBox from "../COMPONENTS/ContentBox";
-import { useNavigate } from "react-router-dom";
+
 
 
 
