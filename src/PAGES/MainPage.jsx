@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext , useEffect} from "react";
 
 import "../Styles.css";
 import axios from "axios";
@@ -17,6 +17,23 @@ var content = [
 ];
 
 function MainPage(props) {
+
+  useEffect(() => {
+   
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          console.log(
+            position.coords.latitude + "   " + position.coords.longitude
+          );
+        });
+      } else {
+        console.log("Geolocation is not supported by this browser.");
+      }
+
+  }, [])
+  
+
+
   
   var colors = [
     "#B2EBF2",

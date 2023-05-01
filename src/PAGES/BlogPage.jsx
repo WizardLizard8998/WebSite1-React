@@ -25,7 +25,7 @@ function BlogPage(props) {
     "#00838F",
   ];
 
-  var content = "blog asşlkdjşalkjfsşldkjsşdlffkgjsşdlfkjgsşdkfksdşlkgjsşdllkgsşlklgşdfdgşfg"
+  var content = "blog asifşlsfglşkjdsfglşksişldkfşisldf "
 
   return (
     <>

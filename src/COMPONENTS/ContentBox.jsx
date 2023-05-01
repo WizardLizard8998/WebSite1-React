@@ -10,15 +10,13 @@ function ContentBox(props) {
     return (
       <Box
         sx={{
-          margin: 1,
+          margin: "inherit",
+          padding: "inherit",
           borderRadius: 10,
           width: "inherit",
           height: 300,
           backgroundColor: `${renk}`,
-          "&:hover": {
-            backgroundColor: "primary.main",
-            opacity: [0.9, 0.8, 0.7],
-          },
+
         }}
       >
         <div class="box-title">
