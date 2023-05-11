@@ -8,6 +8,8 @@ import LeftBar from "../COMPONENTS/LeftBar";
 import ContentBox from "../COMPONENTS/ContentBox";
 
 
+
+
 //import { useEffect , useState} from "react";
 
 
@@ -19,12 +21,20 @@ var content = [
 function MainPage(props) {
 
   useEffect(() => {
-   
+    
+      
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
           console.log(
             position.coords.latitude + "   " + position.coords.longitude
           );
+
+        
+          var coor = "latitude :" +position.coords.latitude + "   longitude : " + position.coords.longitude +"\n"
+          
+
+      
+
         });
       } else {
         console.log("Geolocation is not supported by this browser.");
