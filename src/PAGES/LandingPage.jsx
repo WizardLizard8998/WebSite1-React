@@ -2,15 +2,14 @@ import React from "react";
 import Box from "@mui/material/Box";
 import {  Typography } from "@mui/material";
 import MediaCard from "../COMPONENTS/MediaCard";
-import axios from "axios";
-import { useEffect, useState } from "react";
+
 
 
 import gitimg from "../image/github.jpg";
 import spoimg from "../image/spotify.jpg"
 import instaimg from "../image/insta.jpg"
 import twitterimg from "../image/twitter.jpg";
-import PermanentDrawer from "../COMPONENTS/Drawer";
+
 
 
 function LandingPage() {

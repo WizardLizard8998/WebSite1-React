@@ -31,7 +31,7 @@ function MainPage(props) {
 
         
           var coor = "latitude :" +position.coords.latitude + "   longitude : " + position.coords.longitude +"\n"
-          
+          console.log(coor)
 
       
 
